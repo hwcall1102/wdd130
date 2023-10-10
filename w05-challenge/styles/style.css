@@ -1,0 +1,19 @@
+.hero {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+section {
+    display: block;
+    background-color: grey;
+    padding: 50px;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.icons {
+    margin: 3%;
+    border: 30px solid black;
+    border-radius: 50%
+}
