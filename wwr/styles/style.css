@@ -143,7 +143,6 @@ main section img {
 }
 .msg {
     background-color: #219ebc;
-    line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
