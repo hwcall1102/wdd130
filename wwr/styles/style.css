@@ -179,6 +179,95 @@ footer.social img {
     padding-top: 15px;
 }
 
+/* rivers page */
+#river-msg {
+    grid-column: 2/3;
+    background-color: #219ebc;
+    padding-bottom: 25px;
+    margin-top: -25px;
+    box-shadow: 5px 5px 10px #219ebc;
+}
+#river-msg h4 {
+    color:white;
+    text-align: center;
+}
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.salmon-title {
+    grid-column: 2/7;
+    grid-row: 2/3;
+    text-align: left;
+    color:#023047;
+}
+.salmon-river {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 3/8;
+    box-shadow: 5px 5px 10px #219ebc;
+}
+.salmon-msg {
+    background-color: #219ebc;
+    padding: 35px;
+    grid-column: 5/10;
+    grid-row: 4/9;
+    box-shadow: 5px 5px 10px #219ebc;
+}
+.salmon-msg p {
+    color: #023047;
+    font-size: 1em;
+    text-align: left;
+}
+.desolation-title {
+    grid-column: 2/7;
+    grid-row: 11/12;
+    text-align: left;
+    color: #023047;
+}
+.desolation {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 12/17;
+    box-shadow: 5px 5px 10px #219ebc;
+}
+.desolation-msg {
+    background-color: #219ebc;
+    padding: 35px;
+    grid-column: 5/10;
+    grid-row: 13/18;
+    box-shadow: 5px 5px 10px #219ebc;
+}
+.desolation-msg p {
+    color: #023047;
+    font-size: 1em;
+    text-align: left;
+}
+.grand-title {
+    grid-column: 2/7;
+    grid-row: 19/20;
+    text-align: left;
+    color: #023047;
+}
+.grand {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 20/25;
+    box-shadow: 5px 5px 10px #219ebc;
+}
+.grand-msg {
+    background-color: #219ebc;
+    padding: 35px;
+    grid-column: 5/10;
+    grid-row: 21/26;
+    box-shadow: 5px 5px 10px #219ebc;
+}
+.grand-msg p {
+    color: #023047;
+    font-size: 1em;
+    text-align: left;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid{
         display:block;

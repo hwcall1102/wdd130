@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    grid-template-columns: repeat(9, 1fr);
+}
+div {
+    background-color: White;
+    grid-column: 4/7;
+}
+img {
+    grid-column: 4/7;
+}
+footer{
+    background-color: steelblue;
+    color: white;
+}
