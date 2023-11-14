@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayden Call Web Development | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Hayden Call Web Development">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="mywork.html">My Work</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <div id="hero">
+                <div id="hero-box">
+                    <img id="hero-img" src="images/business.jpg" alt="small business">
+                </div>
+                <section id="hero-msg">
+                    <h1 class="home-title">Hayden Call Web Development</h1>
+                </section>
+        </div>
+        <main>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                    <label for="mail">Business Name:</label>
+                    <input type="text" id="business name" name="business_name" />
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                    <p>Briefly describe your business and what you're looking for in your new site:</p>
+                </li>
+                <li>
+                    <label for="msg"></label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Contact us today!</button>
+                </li>
+                </ul>
+            </form>
+            <section>
+                <p>Every site is unique and has unique needs, as such unfortunately there is not a one size fits all price that we can quote. We can provide a estimate based on the number of pages you will require and various site functionality you are wanting.
+                <br>
+                <br>
+                Free quotes are available! Contact us today!</p>
+            </section>
+            <section class="contact-img">
+                <img src="images/contact.jpg" alt="contact us">
+            </section>
+        </main>
+        <footer>
+            <p>Hayden Call Web Development &copy; 2023 | Hayden Call</p>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="mywork.html">My Work</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <p><a href="site-plan.html">Siteplan</a></p>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for contacting us. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
