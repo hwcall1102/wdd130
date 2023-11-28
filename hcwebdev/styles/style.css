@@ -154,6 +154,21 @@ footer p a:hover {
     margin-top: -20px;
 }
 
+.my-work-contact-button {
+    background-color: #434371;
+    color: #9ad4d6;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.my-work-contact-button:hover {
+    background-color: #9ad4d6;
+    color: #434371;
+}
+
 /* The grid: Four equal columns that floats next to each other */
 .column {
     padding: 10px;
@@ -162,7 +177,7 @@ footer p a:hover {
 /* Style the images inside the grid */
 .column {
     float: left;
-    width: 15% 10px;
+    width: 15%;
     padding: 10px;
 }
 .column img {
