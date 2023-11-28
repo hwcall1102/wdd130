@@ -91,8 +91,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-row: 1/2;
     justify-items: center;
     align-items: center;
-    border-color: black;
-    border-width: 5px;
 }
 .msg {
     background-color: #dbcbd8;
@@ -101,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 3/7;
     grid-row: 2/5;
     box-shadow: 5px 5px 10px #434371;
+    border-radius: 5px;
 }
 .msg p {
     color: #434371;
@@ -149,24 +148,56 @@ footer p a:hover {
 
 /* my work screen - sub page 1 */
 
+.my-work-msg {
+    background-color: #dbcbd8;
+    color: #434371;
+    display: grid;
+    text-align: left;
+    margin: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.line {
+    border-bottom: 1px solid #434371;
+    margin: 30px;
+    margin-top: -25px;
+    margin-bottom: 25px;;
+}
 .click {
     text-align: center;
     margin-top: -20px;
+    color:#434371;
 }
 
+.button-message {
+    display: Grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 .my-work-contact-button {
     background-color: #434371;
     color: #9ad4d6;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: -10px;
     border-radius: 5px;
     text-align: center;
+    grid-column: 4/5;
+    grid-row: 2/3;
 }
 .my-work-contact-button:hover {
     background-color: #9ad4d6;
     color: #434371;
+}
+.my-work-msg2 {
+    color:#434371;
+    grid-column: 2/7;
+    background-color: #dbcbd8;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 /* The grid: Four equal columns that floats next to each other */
