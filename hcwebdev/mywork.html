@@ -31,24 +31,33 @@
                 <p>In a world where anything is possible with the right tools, it can be hard to know where to begin. Here are a few examples of my work to inspire you as to what you want to see in your site.</p>
             </section>
             <section class="my-work-grid">
-                <section class="home-card">
-                    <img class="my-work-example" src="images/home-card.jpg" alt="Home page example">
-                </section>
-                <section class="sub-card">
-                    <img class="my-work-example" src="images/sub-card.jpg" alt="sub page example">
-                </section>
-                <section class="contact-card">
-                    <img class="my-work-example" src="images/contact-card.jpg" alt="contact page example">
-                </section>
-                <section class="wireframe-card">
-                    <img class="my-work-example" src="images/wireframe.jpg" alt="wireframe example">
-                </section>
-                <section class="home2-card">
-                    <img class="my-work-example" src="images/home2-card.jpg" alt="home example">
-                </section>
-                <section class="wireframe2-card">
-                    <img class="my-work-example" src="images/contact-us-wireframe.jpg" alt="wireframe example">
-                </section>
+                <!-- The grid: four columns -->
+                <div class="row">
+                    <div class="column">
+                    <img src="images/home-card.jpg" alt="Home page example" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                    <img src="images/sub-card.jpg" alt="sub page example" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                    <img src="images/contact-card.jpg" alt="contact page example" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                    <img src="images/contact-us-wireframe.jpg" alt="wireframe example" onclick="myFunction(this);">
+                    </div>
+                </div>
+                
+                <!-- The expanding image container -->
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext"></div>
+                </div>
                 <a class="contact-button" href="contactus.html">Contact Us</a>
             </section>
             <section class="my-work-msg2">
@@ -62,6 +71,19 @@
             <p><a href="contactus.html">Contact Us</a></p>
             <p><a href="site-plan.html">Siteplan</a></p>
         </footer>
-    </div>
+        <script>
+            function myFunction(imgs) {
+             // Get the expanded image
+                var expandImg = document.getElementById("expandedImg");
+                // Get the image text
+                var imgText = document.getElementById("imgtext");
+                // Use the same src in the expanded image as the image being clicked on from the grid
+                expandImg.src = imgs.src;
+                // Use the value of the alt attribute of the clickable image as text inside the expanded image
+                imgText.innerHTML = imgs.alt;
+                // Show the container element (hidden with CSS)
+                expandImg.parentElement.style.display = "block";
+                }
+        </script>
 </body>
 </html>
