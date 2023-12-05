@@ -27,42 +27,45 @@
                 </section>
         </div>
         <main>
-            <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                    <label for="mail">Business Name:</label>
-                    <input type="text" id="business_name" name="business_name"/>
-                </li>
-                <li>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email" />
-                </li>
-                <li>
-                    <p>Briefly describe your business and what you're looking for in your new site:</p>
-                </li>
-                <li>
-                    <label for="msg"></label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Contact us today!</button>
-                </li>
-                </ul>
-            </form>
-            <section>
-                <p>Every site is unique and has unique needs, as such unfortunately there is not a one size fits all price that we can quote. We can provide a estimate based on the number of pages you will require and various site functionality you are wanting.
-                <br>
-                <br>
-                Free quotes are available! Contact us today!</p>
-            </section>
-            <section class="contact-img">
-                <img src="images/contact.jpg" alt="contact us">
-            </section>
+            <div class="contact-us-grid">
+                <div class="contact-us-msg">
+                    <p>Every site is unique and has unique needs, as such unfortunately there is not a one size fits all price that we can quote. We can provide a estimate based on the number of pages you will require and various site functionality you are wanting.
+                    <br>
+                    <br>
+                    Free quotes are available! Contact us today!</p>
+                    </div>
+                <div class="contact-us-img">
+                    <img src="images/contact.jpg" alt="contact us">
+                </div>
+                <div class='contact-us-form' id="feedback"></div>
+                    <form action="mailto:haydenc0293@gmail.com" method="post" enctype="text/plain">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" />
+                            </li>
+                            <li>
+                                <label for="mail">Business Name:</label>
+                                <input type="text" id="business_name" name="business_name"/>
+                            </li>
+                            <li>
+                                <label for="mail">Email:</label>
+                                <input type="email" id="mail" name="user_email" />
+                            </li>
+                            <li>
+                                <p>Briefly describe your business and what you're <br> looking for in your new site:</p>
+                            </li>
+                            <li>
+                                <label for="msg"></label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li class="contact-us-button">
+                                <button type="submit">Contact Us Today!</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
         </main>
         <footer>
             <p>Hayden Call Web Development &copy; 2023 | Hayden Call</p>

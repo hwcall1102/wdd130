@@ -276,13 +276,13 @@ form {
     width: 400px;
     /* Form outline */
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #219ebc;
     border-radius: 1em;
 }
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 10px;
 }
 form li + li {
     margin-top: 1em;
